@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> unspecified</title>
+    <link rel="stylesheet" href="/css/account.css">
+    <link rel="stylesheet" href="/css/nav.css" />
+</head>
+<body>
+<!-- <nav>
+    <div class="logo">
+        <img src="https://www.tech-recipes.com/wp-content/uploads/2016/04/youtube-logo-1920.jpg" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        
+        <li><a href="#">Account</a></li>
+        <li><a href="#">My Videos</a></li>
+        <li><a href="#"> Videos</a></li>
+        <li><button class="login-button" href="#">Login</button></li>
+        <li><button class="join-button" href="#">Register</button></li>
+    </ul>
+</nav> -->
+
+<nav>
+    <div class="logo">
+        <img src="https://www.tech-recipes.com/wp-content/uploads/2016/04/youtube-logo-1920.jpg" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+       
+        <li onclick="alert('clicked')" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; cursor: pointer;" > 
+            <img src="/css/images/download (2).png" alt="" style="height: 29px; width: 35px;">
+                 <a class="useremail" id="useremail" >
+                  </a></li>
+
+        <li><a href="#" class="myvideos" id="myvideos"></a></li>
+        <li><a href="#"> Videos</a></li>
+        <li><button class="login-button" href="#">Login</button></li>
+        <li><button class="join-button" href="#">Register</button></li>
+    </ul>
+</nav>
+
+<div>
+    <br>
+</div>
+
+
+    <div class="minutes">
+        <img src="https://www.paypalobjects.com/paypal-ui/icons/svg/credit-debit-cards.svg" alt="buy image">
+        <a href="">Buy Videos in minutes </a><br>    <p>  > </p>
+    </div>
+
+
+    <div class="fundaccount">
+        <p class="balance"> <%=email %></p >
+       <p>fund your account today to get the latest videos from the comfort of your home</p> 
+    <p class="balance">
+    
+        Available balance : # <%=balance %>
+    </p >
+       <a href=""> Fund account now</a>
+    </div>
+
+<div>
+    You verify Payment by uploading proof and it only takes 20-30 minutes to complete we accept all payment method
+</div>
+
+    <div class="time">
+     <p>Funding your account dont take time just just upload proof here and you payment is verified so you can start buying videos
+</p>   
+        <a href=""> Verify Payment</a>
+
+    </div>
+<script src="/javascript/nav.js"></script>
+</body>
+</html>

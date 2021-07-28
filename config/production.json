@@ -1,0 +1,7 @@
+{
+    "connection":{
+        "url":"mongodb+srv://playground:desolidboy1@cluster0.vnuog.mongodb.net/videoRental"
+    }
+    
+    }
+

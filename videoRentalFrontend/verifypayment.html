@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload videos </title>
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/button.css">
+</head>
+<body>
+
+
+  <main>
+      <h1>Upload Payment proof below </h1>
+     <h3>
+         Please upload a proof that shows you made a payment (eg:screenshot)
+         with the price and other credentials this will undergo a human verification 
+        and once verified you will get an email notification and your balance
+         will be update accordingly
+        <!-- upload the following credentials to get ur videos uploaded
+         note be careful while trying to upload videos mistakes here
+          could lead to app crash  thumbnail must be an image -->
+     </h3> 
+     <span class="errMessage"></span>
+     <br>
+     <input type="number" name="price paid" id="amount-paid" placeholder="the amount you paid ">
+    <input type="text" name="name used to make payment" id="name-used-to-make-payment" placeholder="name used to make payment">
+    <!-- <input type="number" name="price" id="price" placeholder="video price"> -->
+    <div class="thumbnail"> screenshot or file that shows you made payment</div>
+    <input type="file" name="video-thumbnail" id="video-thumbnail" placeholder="video-thumbnail">
+    <br>
+    <!-- <a href="">Upload</a> -->
+    <button class="button-button" id="submit-thumbnail">upload</button>
+  </main>
+<hr>
+  
+<script src="javascript/upload/upload.js"></script>
+</body>
+</html>

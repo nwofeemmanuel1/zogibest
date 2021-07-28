@@ -1,0 +1,39 @@
+/* .contactus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fafafa;
+  text-align: center;
+  box-shadow: 1px 2px 16px 32px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  font-weight: bold;
+  text-align: center;
+} */
+
+/* main {
+  top: 5px;
+  
+} */
+
+main video {
+  /* width: 500px;
+  height: 500px; */
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  /* main {
+    top: 50px;
+
+  } */
+
+  main video {
+    width: 100%;
+    height: auto;
+  }
+}

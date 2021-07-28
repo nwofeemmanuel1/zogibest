@@ -1,0 +1,77 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main,
+.preview,
+.video {
+  position: relative;
+  /* top: 50px; */
+  padding-top: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin: 6px;
+  background-color: #fff;
+  text-align: center;
+  margin: auto;
+  height: 10%;
+  width: 90%;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+.preview,
+.video {
+  display: none;
+
+  padding-top: 50px;
+}
+
+.errMessage,.errMessage1,.errMessage2 {
+  color: red;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: lighter;
+  font-size: larger;
+}
+.thumbnail {
+  text-align: center;
+}
+
+input {
+  padding: 11px;
+  width: 80%;
+  opacity: 0.8;
+  margin: 3px;
+}
+input[type="file"] {
+  border: 1px solid gray;
+}
+
+@media (min-width: 800px) {
+  main,
+  .preview,
+  .video {
+    position: relative;
+    /* top: 50px; */
+    padding-top: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin: 6px;
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+    height: 10%;
+    width: 60%;
+    border-radius: 6px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+  }
+}

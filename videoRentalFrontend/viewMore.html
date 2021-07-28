@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/viewmore.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/button.css">
+   
+                       </head>
+<body>
+
+
+
+    <nav>
+        <div class="logo">
+            <img src="https://www.tech-recipes.com/wp-content/uploads/2016/04/youtube-logo-1920.jpg" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+           
+            <li onclick="alert('clicked')" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; cursor: pointer;" > 
+                <img src="/css/images/download (2).png" alt="" style="height: 29px; width: 35px;">
+                     <a class="useremail" id="useremail" >
+                      </a></li>
+
+            <li><a href="#" class="myvideos" id="myvideos"></a></li>
+            <li><a href="#"> Videos</a></li>
+            <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">Register</button></li>
+        </ul>
+    </nav>
+<div></div>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="video-wrapper">
+    <video  controls autoplay >
+        <source src="../Api/Videos/populate.mp4" type="video/mp4">
+        <source src="../Api/Videos/populate.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+    </video> 
+</div>
+    
+<span>
+<div class="description">
+    <b style="font-weight:700;">Haha mr ibu  has done it again</b>
+    <p>Description: nigerian number one movies acted by roma
+        zubby ,hah,s,gah
+    </p>
+<br><br>
+<div class="buyvideo">
+       <p>price:  $30 </p>
+        <button class="button-button">Buy Video</button>
+            <!-- <a href="#">Buy Full Video </a> -->
+            <!-- <button class="button actionContinue scTrack:unifiedlogin-login-submit" type="submit" id="btnLogin" name="btnLogin"
+                value="Login">Buy Full Video</button> -->
+  </div>
+
+</div>
+</span>
+<script src="javascript/nav.js"></script>
+</body>
+</html>

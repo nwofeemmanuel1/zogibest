@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload videos </title>
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/button.css">
+</head>
+<body>
+
+
+  <main>
+      <h1>Upload video credentials </h1>
+     <h3>
+        upload the following credentials to get ur videos uploaded
+         note be careful while trying to upload videos mistakes here
+          could lead to app crash  thumbnail must be an image
+     </h3> 
+     <span class="errMessage"></span>
+     <br>
+     <input type="text" name="video name" id="video-name" placeholder="video name ">
+    <input type="text" name="video description" id="video-description" placeholder="video description">
+    <!-- <input type="number" name="price" id="price" placeholder="video price"> -->
+
+<input type="number" name="price" id="price1"  placeholder="price for (1 day license)">
+<input type="number" name="price" id="price2"  placeholder="price for (1 year license)">
+<input type="number" name="price" id="price3"  placeholder="price for (3 years license)">
+
+    <div class="thumbnail"> video thumbnail</div>
+    <input type="file" name="video-thumbnail" id="video-thumbnail" placeholder="video-thumbnail">
+    <br>
+    <!-- <a href="">Upload</a> -->
+    <button class="button-button" id="submit-thumbnail">upload</button><br>
+    <a href="/uploadfreevideos.html"> upload free videos</a>
+    <br>
+    <br>
+  </main>
+<hr>
+  <div class="preview">
+      <h1>upload preview</h1>
+      <p>please upload the video preview this will be accessible to anyone do not upload the main video here else the video will be free
+        make sure of the video before upload because theres no validation yet
+      </p>
+      <div class="videopreview"> video preview</div>
+      <span class="errMessage1"> </span>
+     <br>
+      <input type="file" name="preview" id="video-preview">
+      <br>
+      <!-- <a href="">Upload</a> -->
+    <button  class="button-button"  id="submit-preview">upload</button>
+  </div>
+
+  <hr>
+
+  <div class="video">
+      <h1>upload the video</h1>
+      <h2>please upload the main video here this will not be visible to anyone else they buy the video NB: please make sure you have a
+         strong internet connection before uploading videos</h2>
+      <div class="main-video">Main Video </div>
+      <span class="errMessage2"> </span>
+      <br>
+      <input type="file" name="video" id="video">
+      <br>
+     <button  class="button-button" id="submit-mainvideo">upload</button>
+  </div>
+<script src="javascript/upload/upload.js"></script>
+</body>
+</html>

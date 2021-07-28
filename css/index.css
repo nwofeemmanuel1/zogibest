@@ -1,0 +1,108 @@
+
+
+main {
+  position: absolute;
+  margin-top: 60px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+@media (min-width: 501px) {
+  main span {
+    margin: 6px;
+    background-color: #fff;
+    height: 70%;
+    width: 65%;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  main span:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+}
+
+@media (min-width: 800px) {
+  main span {
+    margin: 6px;
+    background-color: #fff;
+    height: 50%;
+    width: 32%;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  main span:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+}
+
+
+p {
+  position: relative;
+  bottom: 2%;
+  margin: auto;
+  text-align: center;
+  margin: 3px;
+  font-weight: lighter;
+  font-size: 21px;
+  /* box-shadow: 0 20px 40px -14px rgba(99, 41, 41, 0.25); */
+  opacity: 0.7;
+
+overflow: hidden;
+}
+
+.watch {
+  margin: auto;
+  text-align: center;
+  margin: 3px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: blue;
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 8px;
+  border-color: gray;
+  width: 80%;
+  margin: auto;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  main span {
+    margin: 3%;
+    background-color: #fff;
+    height: 55%;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+  }
+  main span:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+}

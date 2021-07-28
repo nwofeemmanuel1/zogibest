@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload evidence of payment</title>
+    <link rel="stylesheet"
+        href="https://www.paypalobjects.com/web/res/fe3/9cfe1f7aa17ef97a20bf96b912e92/css/contextualLogin.css" />
+
+    <link rel="shortcut icon" type="image/jpg" href="https://www.tech-recipes.com/wp-content/uploads/2016/04/youtube-logo-1920.jpg" />
+    <link rel="stylesheet" href="./css/proof.css">
+    <link rel="stylesheet" href="/css/account.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src="javascript/chechforcookie.js"> </script>
+    <script src="javascript/upload/proofupload.js"></script>
+    <!-- <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/nav.css" /> -->
+</head>
+<style>
+    .content h1 {
+        font-weight: lighter;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 24px;
+    }
+
+    @media(min-width:500px) {
+
+        .content h1 {
+            font-weight: lighter;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+
+    }
+</style>
+
+<body style="background-image: url('https://ozcanzaferayan.github.io/financial-crm/img/documents.svg'); background-repeat: no-repeat; background-size: cover;">
+
+    <div class="center">
+        <img src="https://www.paypalobjects.com/paypal-ui/icons/svg/credit-debit-cards.svg" alt="payment">
+
+<div class="payment">
+    <h1>Fund Account</h1>
+    <p>by uploading a proof here it means that you have made payment to the account below or that 
+        you have paid through any other payment method you prefer if you havent made payment at all
+        <a href="/payment.html">make payment here</a>
+        your payment will undergo a human verification you will get an email and it will also  show up in your account once the upload is verified
+    </p>
+ 
+    <ul>
+        <li>Account Name</li>
+        <li>Account Number</li>
+        <li>Bank </li>
+    </ul>
+</div>
+<hr>
+
+        <div class="content">
+<div id="errMessage" style="text-align: center; color: red;">
+
+</div>
+    <input type="number" name="price paid" id="amount-paid" placeholder="the amount you paid ">
+    <input type="text" name="name used to make payment" id="name-used-to-make-payment" placeholder="name used to make payment">
+    <!-- <input type="number" name="price" id="price" placeholder="video price"> -->
+    <div class="thumbnail"> screenshot or evidence of payment</div>
+    <input type="file" name="screenshot" id="screenshot" placeholder="screenshot">
+    <br>
+    <!-- <a href="">Upload</a> -->
+    <button  class="button-button"  id="submit-proof">upload</button>
+        </div>
+        <br><br><br><br>
+        
+        <p>video rental . All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>

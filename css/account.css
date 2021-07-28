@@ -1,0 +1,248 @@
+body {
+  position: absolute;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.minutes {
+  position: relative;
+  top: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin: 6px;
+  background-color: #fff;
+
+  height: 10%;
+  width: 90%;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+
+.minutes > a {
+  text-decoration: none;
+}
+
+.minutes > a:hover {
+  font-size: large;
+  text-decoration: overline;
+}
+
+.minutes > img {
+  height: 30px;
+  width: 30px;
+}
+
+.fundaccount {
+  position: relative;
+
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkIEQmCqEMM7Ur-vgSvcKyMZ_QNRSnNCw7bg&usqp=CAU");
+  /* object-fit: cover; */
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  /* bottom: 20px; */
+  resize: cover;
+
+  border-radius: 6px;
+}
+
+.fundaccount p {
+  position: relative;
+  top: 20px;
+  font-size: large;
+  color: white;
+}
+.fundaccount a {
+  color: white;
+  position: relative;
+  font-size: x-large;
+  text-decoration: none;
+  top: 28px;
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.fundaccount a:hover {
+  color: white;
+  position: relative;
+  font-size: x-large;
+  text-decoration: none;
+  top: 28px;
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: overline;
+}
+
+.fundaccount .balance {
+  color: white;
+  font-weight: 800;
+}
+
+.time {
+  background-image: url("https://www.apers.org/images/Blog_Images/Withdraw_From_Fund_Blog_101819.jpg");
+  object-fit: cover;
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  bottom: 50px;
+  border-radius: 6px;
+}
+
+.time p {
+  color: white;
+}
+
+.time a {
+  color: white;
+  position: relative;
+  font-size: x-large;
+  text-decoration: none;
+  top: 15px;
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.time a:hover {
+  color: white;
+  position: relative;
+  font-size: x-large;
+  text-decoration: none;
+  top: 15px;
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: overline;
+}
+
+@media (min-width: 800px) {
+  .minutes {
+    top: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin: 6px;
+    background-color: #fff;
+
+    height: 10%;
+    width: 90%;
+    border-radius: 6px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+  }
+
+  .minutes > a {
+    text-decoration: none;
+  }
+
+  .minutes > a:hover {
+    font-size: large;
+    text-decoration: overline;
+  }
+
+  .minutes > img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .fundaccount {
+    position: relative;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkIEQmCqEMM7Ur-vgSvcKyMZ_QNRSnNCw7bg&usqp=CAU");
+    /* object-fit: cover; */
+    /* width: 100%; */
+    width: 80%;
+    text-align: center;
+    font-size: larger;
+    /* bottom: 50px; */
+    resize: cover;
+  }
+
+  .fundaccount p {
+    position: relative;
+    top: 20px;
+    font-size: x-large;
+    color: white;
+  }
+  .fundaccount a {
+    color: white;
+    position: relative;
+    font-size: x-large;
+    text-decoration: none;
+    top: 31px;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  .fundaccount a:hover {
+    color: white;
+    position: relative;
+    font-size: x-large;
+    text-decoration: none;
+    top: 31px;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: overline;
+  }
+
+  .fundaccount .balance {
+    color: white;
+    font-weight: 800;
+  }
+
+  .time {
+    background-image: url("https://www.apers.org/images/Blog_Images/Withdraw_From_Fund_Blog_101819.jpg");
+    object-fit: cover;
+    width: 80%;
+    text-align: center;
+    font-size: x-large;
+    bottom: 50px;
+  }
+
+  .time p {
+    color: white;
+  }
+
+  .time a {
+    color: white;
+    position: relative;
+    font-size: x-large;
+    text-decoration: none;
+    top: 15px;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  /* .time a :hover {
+    color: white;
+    position: relative;
+    font-size: x-large;
+    text-decoration: none;
+    top: 15px;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: overline;
+    background-color: red;
+  } */
+}

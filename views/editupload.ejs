@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verify uploads</title>
+    <link rel="stylesheet"
+        href="https://www.paypalobjects.com/web/res/fe3/9cfe1f7aa17ef97a20bf96b912e92/css/contextualLogin.css" />
+
+    <link rel="shortcut icon" type="image/jpg" href="https://www.tech-recipes.com/wp-content/uploads/2016/04/youtube-logo-1920.jpg" />
+    <link rel="stylesheet" href="/css/proof.css">
+    <link rel="stylesheet" href="/css/account.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <script>
+//         ( (cname)=>{
+   
+//    let name = cname + "=";
+//    let decodedCookie = decodeURIComponent(document.cookie);
+//    let ca = decodedCookie.split(';');
+//    for (let i = 0; i < ca.length; i++) {
+//        let c = ca[i];
+//        while (c.charAt(0) == ' ') {
+//            c = c.substring(1);
+//        }
+//        if (c.indexOf(name) == 0) {
+           
+//            const token= c.substring(name.length, c.length);
+//            return verifyCookie(token)
+//        }
+//    }
+//    // return "";
+//    window.location.href="/login.html"
+//  })("tokene")
+    </script>
+    <!-- <script src="/javascript/chechforcookie.js"> </script>
+    <script src="/javascript/upload/proofupload.js"></script> -->
+    <!-- <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/nav.css" /> -->
+</head>
+<style>
+    .content h1 {
+        font-weight: lighter;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 24px;
+    }
+
+    @media(min-width:500px) {
+
+        .content h1 {
+            font-weight: lighter;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="center">
+        <img src="https://www.paypalobjects.com/paypal-ui/icons/svg/credit-debit-cards.svg" alt="payment">
+
+<div class="payment">
+    <h1>Reciept/evidence of payment</h1>
+   <!-- <img src=<%=screenshot %> alt=" "style="height: 100%; width: 100%;" > -->
+   <img src="<%=screenshot%>" alt="" style="height: 100%; width: 100%;">
+   
+</div>
+<hr>
+
+        <div class="content">
+<div id="errMessage" style="text-align: center; color: red;">
+
+</div>
+<b>amount a user paid</b>
+    <input type="number" name="price paid" id="amount-paid" placeholder="amount a user paid " value=<%=amount %> >
+  <br>
+    <b>name the user used to make payment</b>
+    <br>
+    full name:<%=name %>
+    <br>
+    <input type="text" name="name used to make payment" id="name-used-to-make-payment" placeholder="name used to make payment"  value=<%=name %>>
+    <!-- <input type="number" name="price" id="price" placeholder="video price"> -->
+    <br>
+    <br>
+    <!-- <a href="">Upload</a> -->
+    <button  class="button-button"  id="submit-proof">verify</button>
+    <br>
+     the user never made any payment ? or you did not see an alert
+     <br>
+     <a href="tel:02909202902">contact user and break  </a>
+        </div>
+        <br><br><br><br>
+       <div class="email" style="display: none;"><%=email %></div>
+        <p>video rental . All rights reserved.</p>
+    </div>
+<script>
+    const verifypayment=async(email,amount)=>{
+  
+  const response= await fetch("http://localhost:8080/api/admin/verifypayment",{
+method:"POST",
+headers:{"content-type":"application/json"},
+body:JSON.stringify({email, amount})
+    })
+    const result=await response.json()
+    console.log(result)
+}
+
+
+
+
+    document.addEventListener("DOMContentLoaded",()=>{
+        document.querySelector("#submit-proof").onclick=()=>{
+          const email=  document.querySelector(".email").innerHTML
+          const amount=document.querySelector("#amount-paid").value
+          if(!amount)return alert("amount is required")
+          verifypayment(email,amount)
+        }
+   
+    })
+</script>
+</body>
+
+</html>

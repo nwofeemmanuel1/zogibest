@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/video.css">
+    <link rel="stylesheet" href="/css/viewmore.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/button.css">
+  
+                       </head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://www.tech-recipes.com/wp-content/uploads/2016/04/youtube-logo-1920.jpg" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+           
+            <li id="gotodashboard" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; cursor: pointer;" > 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwp--EwtYaxkfsSPIpoSPucdbxAo6PancQX1gw6ETSKI6_pGNCZY4ts1N6BV5ZcN3wPbA&usqp=CAU" alt="" style="height: 29px; width: 35px;">
+                     <a class="useremail" id="useremail" >
+                      </a></li>
+
+            <li><a href="/myvideos.html" class="myvideos" id="myvideos"></a></li>
+            <li><a href="/"> Videos</a></li>
+            <li><button class="login-button" onclick="window.location.href='/login.html' ">Login</button></li>
+            <li><button class="join-button" onclick="window.location.href='/register.html' ">Register</button></li>
+        </ul>
+    </nav>
+
+
+<div></div>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="video-wrapper">
+    <video  controls autoplay >
+        <source src=<%= videoSource %> type="video/mp4">
+        <source src=<%= videoSource %> type="video/videoSource">
+        Your browser does not support the video tag.
+    </video> 
+</div>
+    
+<span>
+<div class="description">
+    <b style="font-weight:700;"><%=videoname%></b>
+    <p>
+        <%= videodescription %>
+    </p>
+<br><br>
+<p class="errMessage" style="color: red;"></p>
+<p class="success" style="color: white; background-color: green; padding: 5px; font-weight: lighter; margin: 5px;"></p>
+<div class="buyvideo">
+    <button class="button-button">Download</button>
+
+  </div>
+<br>
+<br>
+<br>
+</div>
+</span>
+<script src="/javascript/nav.js"></script>
+<!-- <script src="/javascript/getcookie.js"></script> -->
+
+<script src="javascript/gotodashboard.js"></script>
+</body>
+</html>

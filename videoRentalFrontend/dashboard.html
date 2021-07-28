@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My management dashboard</title>
+</head>
+
+    <link rel="stylesheet" href="dashboard/index.css">
+    <script src="javascript/chechforcookie.js"> </script>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <div class="icon-container">
+                <img class="icon hexagon" />
+            </div>
+            <span class="name">Management dashboard</span>
+        </a>
+        <ul class="navbar-nav">
+            <li>
+                <a class="active"><img class="icon home" /><span>dashboard</span></a>
+            </li>
+            <li>
+                <a href="/myvideos.html"><img class="icon statistics" /><span>My Videos</span></a>
+            </li>
+          
+                <a href="/freevideos.html"><img class="icon file" /><span>free videos</span></a>
+            </li>
+        </ul>
+        <div class="navbar-footer">
+            <img class="image-documents" src="https://ozcanzaferayan.github.io/financial-crm/img/documents.svg" alt="documents" />
+            <div class="container">
+                <h2>Video report</h2>
+                <span>Annual detailed video report</span>
+                <a >Downloadable</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <!-- <section role="search">
+                <form action="#" method="get">
+                    <div class="form-inline">
+                        <img class="icon search" />
+                        <input type="search" placeholder="Search" />
+                    </div>
+                </form>
+            </section> -->
+
+            <section role="application">
+                <button class="change-view">
+                    <img class="icon layout" />Available balance : #4000
+                </button>
+                <button class="notification">
+                    <img class="icon notification" />
+                </button>
+                <button class="menu">
+                    <img class="icon menu" />
+                </button>
+            </section>
+        </header>
+        <h1>Overview</h1>
+        <div class="charts-wrapper">
+            <section role="credit-card">
+                <div class="top">
+                    <img src="https://ozcanzaferayan.github.io/financial-crm/img/mastercard.svg" />
+                    <img src="https://ozcanzaferayan.github.io/financial-crm/img/apple_pay.svg" class="apple_pay" />
+                </div>
+                <div class="ccNumber">
+                    <span>Aivalable balance:#4000</span>
+                </div>
+                <div class="ccBottom">
+                    <div class="ccValidThru">
+                        <label>VALID THRU</label>
+                        <span>valid</span>
+                    </div>
+                    <div class="ccCardHolder">
+                        <label>email</label>
+                        <span>your name</span>
+                    </div>
+                </div>
+            </section>
+            <section role="chart" class="exchange-rates">
+                <h3 class="title">Make deposit</h3>
+               
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-afOGRiUgrbcMIId9YT-7PfDTpXKyXzipeHs9AYH-uAv-vfExSVql_eVx_6bWChGtlyU&usqp=CAU" 
+style="width: 22%;"
+alt="">
+<div></div>
+
+<a href="/payment.html" style="text-decoration: none; font-size: larger;" class="fundaccount" >Fund Account</a>
+
+ <p style="color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> fund your account today to get the latest videos from the comfort of your home</p>
+ 
+              <canvas id="exchangeRates"></canvas>
+            </section>
+            <section role="chart" class="last-costs">
+                <h3 class="title">Exchange Rates</h3>
+                <img src="https://i.ytimg.com/vi/AAu4Y_fL_PA/maxresdefault.jpg" alt="" style="width: 100%;">
+                <canvas id="last_costs"></canvas>
+
+            </section>
+            <section role="chart" class="efficiency">
+                <h3 class="title">Verify Payment</h3>
+    <img src="data:image/png;base64,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" alt="" style="width: 20%;">
+   <br>
+    <a href="/proof.html" style="text-decoration: none; font-size: larger;" class="fundaccount" >verify payment</a>
+
+    <p style="color: black;"> You verify Payment by uploading proof or evidence of payment which undergoes human verifications and it only takes 20-30 minutes to complete we accept all payment method</p>
+                <canvas id="efficiency"></canvas>
+
+            </section>
+        </div>
+    </main>
+</body>
+<script src="dashboard/index.js"></script>
+
+</html>
